@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilizando formulário com CSS</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+<body>
+    <h3>Formulário Candidato</h3>
+    <table class="caixa">
+            <form action="">
+          
+                <th><div style="text-align: left;"<label for="Nome do Candidato"> <span class="font_texto">Nome do Candidato:</span> </label>
+                <input type="text" id="Nome" name="Nome do Candidato"></th><br>
+
+                <tr><th><div style="text-align: left;"<label for="sexo">Sexo:</label>
+                <input type="radio" name="sexo" id="sexo" value="Masculino">Masculino 
+                <input type="radio" name="sexo" id="sexo" value="Feminino">Feminino
+                <input type="radio" name="sexo" id="sexo" value="Outro">Outro
+                <label for="Outro"></label> <input type="text" id="sexo" name="sexo"></th></tr>
+
+
+                <tr><th><div style="text-align: left;"<label for="renda">Renda:</label>
+                <input type="text" id="renda" name="renda"></th></tr>
+
+                <tr><th><div style="text-align: left;"<label for="time">Time:</label>
+                <input type="text" id="Time" name="Time"></th></tr>
+
+                <tr><th><div style="text-align: left;"<label for="cartão de crédito"> <span class="texto"> Cartão de Crédito:</span></label>
+                <input type="text" required pattern="[0-9]{4}[-]? [0-9]{4}[-]? [0-9]{4}[-]? [0-9]{4}[-]?" placeholder="0000-0000-0000-0000"></th></tr>
+           
+                <tr><th><input type="submit" value="Enviar">
+                <input type="reset" value="Limpar"><br></th></tr>
+            
+            </form>
+    </table>
+</body>
+</html>

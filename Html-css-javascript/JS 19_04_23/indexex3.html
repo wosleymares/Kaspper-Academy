@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais EventListener</title>
+</head>
+<body>
+    <h1> Vai esfriar no feriado! </h1>
+    <button id="btnTeste">Clique aqui!</button>
+
+    <script>
+        // Recuperando o elemento que queremos no evento
+     let btnTeste = document.getElementById('btnTeste')
+     
+        // Definir a função que vai responder ao evento
+        let onBtnClick = function(){
+            btnTeste.textContent = "Você clicou aqui!"
+        }
+
+        // Adicionar o listener no elemento
+       // btnTeste.addEventListener('click', onBtnClick)
+
+        // Segunda forma inLine
+        btnTeste.addEventListener('click', function(){
+            btnTeste.textContent = "Outra forma de addEventListener"
+        })
+    
+    </script>
+
+</body>
+
+</html>

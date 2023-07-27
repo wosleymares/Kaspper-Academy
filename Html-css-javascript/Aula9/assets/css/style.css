@@ -1,0 +1,22 @@
+.texto_negrito{
+    font-weight: bold;
+
+}
+
+.texto_maiusculo{
+    text-transform: uppercase;
+}
+
+.img_thumb{
+    width: 200px;
+}
+
+.texto_espacado{
+    padding: 10px;
+    font-size: 35px;
+    font: bold;
+}
+
+.paragrafo_relativo{
+    font-size: 1.5rem;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão HTML e CSS</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- 1°) Evite estilos inline, como o exemplo abaixo -->
+
+    <p style="color: blue; font-size: x-large;">Esse é um parágrafo com css inline</p>
+
+    <!-- 2°) Evite tags de formatação -->
+    <p>Isso é um texto <b>formatado</b>.</p>
+
+    <!-- 3°) Bom usar assim -->
+    <p>Isso é um texto <span class="texto_negrito">formatado</span>.</p>
+
+    <!-- 4°) Digite em minúscula-->
+    <h1>ISSO É UM TÍTULO</h1>
+
+    <h1 class="texto_maiusculo">isso é um título</h1>
+
+    <!--5°) Utilize sempre validações do HTML-->
+    <input type="email" name="email" id="email" placeholder="Informe o email" required><br>
+
+    <!--6°) Use o atributo alt-->
+    <img src="assets/imagens/Java1.png" class="img_thumb" alt="Isso é java">
+
+    <!--7°) Utilize shorthands em css -->
+    <div class="texto_espacado">
+        Um texto com espaçamento interno
+    </div>
+
+    <!--7°) Utilize unidades de medidas relativas -->
+    <p class="paragrafo_relativo">Parágrafo com uma  unidade de medida relativa.</p>
+
+
+</body>
+</html>

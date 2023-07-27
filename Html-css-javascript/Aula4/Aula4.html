@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário em html 5</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    
+    <form action="">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome"><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required><br>
+
+        <label for="dataNascimento" >Data Nascimento:</label>
+        <input type="date" name="dataNascimento" id="dataNascimento"><br>
+
+        <label for="mes">Mês:</label>
+        <input type="month" name="mes" id="mes"><br>
+
+        <label for="idade" >Idade:</label>
+        <input type="number" min="18" max="70" name="idade">
+
+        <label for="regiao">Região</label>
+        <input type="radio" name="região" id="regiao" value="Sul">Sul
+        <input type="radio" name="regiao" id="regiao" value="Sudeste">Sudeste
+        <input type="radio" name="regiao" id="regiao" value="Centro Oeste">Centro Oeste
+        <input type="radio" name="regiao" id="regiao" value="Norte">Norte
+        <input type="radio" name="regiao" id="regiao" value="Nordeste">Nordeste <br>
+
+        <label for="estados">UF:</label>
+        <select name="estados" id="estados">
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="PR">Paraná</option>
+        </select>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea name="mensagem" id="mensagem" cols="35" rows="1"></textarea><br>
+
+        <label for="placa">Placa:</label>
+        <input type="text" required pattern="[A-Z] {3} [0-9]{4}" placeholder="AAA-9999"><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+
+    </form>
+</body>
+</html>

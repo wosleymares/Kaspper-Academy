@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Propiedades/eventos</title>
+        <style>
+        .barba{
+            background: black;
+            width: 5px;
+            height: 5px;
+            position: absolute;
+            top: 80px;
+            left: 15px;
+        }
+        </style>
+    </head>
+    <body>
+        <img id="imagem" src="https://assets.pokemon.com/assets/cms2/img/misc/countries/pt/country_detail_pokemon.png">
+        
+        <script>
+        let imagem = document.getElementById("imagem")
+
+        let mouseMove = function(e){
+            //Criando elemento
+            let barbaDiv = document.createElement("div")
+            barbaDiv.className = "barba"
+            //Adicionar o elemento barbaDiv
+            document.body.appendChild(barbaDiv)
+            barbaDiv.style.top = e.clientY + "px"
+            barbaDiv.style.left = e.clientX + "px"
+        } 
+
+        imagem.addEventListener("mousemove", mouseMove)        
+        </script>
+        
+    </body>
+</html>
