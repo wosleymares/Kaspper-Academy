@@ -1,18 +1,32 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './components/login/login.component';
+import { authGuard } from './services/auth.guard';
 
 const routes: Routes = [
   {
-    path:"login",
-    //component: LoginComponent carrega o componente no inicio 
-    loadComponent: ()=>
+    path: 'login',
+   // component: LoginComponent Carrega o componente na inicialização do projeto
+    loadComponent:()=>
     import('./components/login/login.component').then(x => x.LoginComponent)
   },
+  {
+    path: '',
+    loadComponent:()=>
+    import('./components/admin/home/home.component').then(x => x.HomeComponent),
+    canActivate:[authGuard]
+  },
+
+  {
+    path: 'users',
+    loadComponent: () =>
+    import('./components/admin/users/users.component').then(x => x.UsersComponent),
+    canActivate:[authGuard]
+  }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

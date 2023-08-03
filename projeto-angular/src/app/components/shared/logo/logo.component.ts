@@ -9,5 +9,5 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./logo.component.scss']
 })
 export class LogoComponent {
-  public imageLogo: string = "assets/images/kassperacademy.png";
+  public imageLogo: string = "assets/images/logo_horizontal.png";
 }
