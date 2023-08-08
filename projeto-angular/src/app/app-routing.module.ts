@@ -16,11 +16,10 @@ const routes: Routes = [
     import('./components/admin/home/home.component').then(x => x.HomeComponent),
     canActivate:[authGuard]
   },
-
   {
-    path: 'users',
-    loadComponent: () =>
-    import('./components/admin/users/users.component').then(x => x.UsersComponent),
+    path: 'usuarios',
+    loadComponent:() =>
+    import('./components/admin/usuario/usuario.component').then(x => x.UsuarioComponent),
     canActivate:[authGuard]
   }
 ];

@@ -1,6 +1,6 @@
-export interface Usuario{
-    id?: String;
-    nome?: String;
-    email?: String;
-    dataNascimento?: Date;
+export interface Usuario {
+  id?: string;
+  nome?: string;
+  email?: string;
+  dataNascimento?: Date;
 }

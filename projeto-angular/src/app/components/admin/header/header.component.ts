@@ -18,10 +18,9 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
     MatButtonModule,
     MatIconModule,
     LogoComponent,
-    AppRoutingModule,
+    AppRoutingModule
   ],
 })
-
 export class HeaderComponent implements OnInit {
   auth = inject(AuthService);
 
